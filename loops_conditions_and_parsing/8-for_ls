@@ -1,5 +1,3 @@
-for item in *
-do
-    [ -e "$item" ] || continue
-    echo "${item#*-}"
-done
+#!/usr/bin/env bash
+# List files showing name after first dash
+for item in *; do echo "${item#*-}"; done
