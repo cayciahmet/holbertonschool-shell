@@ -1,0 +1,5 @@
+for item in *
+do
+    [ -e "$item" ] || continue
+    echo "${item#*-}"
+done
